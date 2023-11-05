@@ -9,13 +9,13 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 
-public class LambdaStepsGitHubAllureSearchTest {
+public class LambdaAndStepsGitHubAllureSearchTest {
 
     private static final String REPOSITORY = "eroshenkoam/allure-example";
     private static final int ISSUE = 80;
 
     @Test
-    public void testIssueSearch() {
+    public void testLambdaIssueSearch() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         step("Отклываем главную страницу", () -> {
@@ -37,5 +37,17 @@ public class LambdaStepsGitHubAllureSearchTest {
             $(withText("#" + ISSUE)).should(Condition.exist);
         });
 
+    }
+
+    @Test
+    public void testAnnotatedStepIssueSearch() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+        WebSteps steps = new WebSteps();
+
+        steps.openMainPage();
+        steps.searchForRepository(REPOSITORY);
+        steps.clickOnRepositoryLink(REPOSITORY);
+        steps.openIssuesTab();
+        steps.shouldSeeIssueWithNumber(ISSUE);
     }
 }
