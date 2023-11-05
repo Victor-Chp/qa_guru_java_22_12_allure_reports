@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Nov 05 07:38:29 GMT 2023","Sun Nov 05 07:38:32 GMT 2023","2801","","LambdaAndStepsGitHubAllureSearchTest","","LambdaAndStepsGitHubAllureSearchTest","testAnnotatedStepIssueSearch","testAnnotatedStepIssueSearch()",""
+"passed","Sun Nov 05 07:38:15 GMT 2023","Sun Nov 05 07:38:23 GMT 2023","7485","","AttachmentsLambdaAndStepsGitHubAllureSearchTest","","AttachmentsLambdaAndStepsGitHubAllureSearchTest","testAnnotatedStepAttachmentsIssueSearch","testAnnotatedStepAttachmentsIssueSearch()",""
+"passed","Sun Nov 05 07:38:32 GMT 2023","Sun Nov 05 07:38:36 GMT 2023","3948","","ListenerGitHubAllureSearchTest","","ListenerGitHubAllureSearchTest","testIssueSearch","testIssueSearch()",""
+"passed","Sun Nov 05 07:38:23 GMT 2023","Sun Nov 05 07:38:26 GMT 2023","3322","","AttachmentsLambdaAndStepsGitHubAllureSearchTest","","AttachmentsLambdaAndStepsGitHubAllureSearchTest","testLambdaAttachmentsIssueSearch","testLambdaAttachmentsIssueSearch()",""
+"passed","Sun Nov 05 07:38:26 GMT 2023","Sun Nov 05 07:38:29 GMT 2023","2599","","LambdaAndStepsGitHubAllureSearchTest","","LambdaAndStepsGitHubAllureSearchTest","testLambdaIssueSearch","testLambdaIssueSearch()",""
